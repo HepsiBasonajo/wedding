@@ -1,0 +1,491 @@
+
+body{
+  text-align: center;
+}
+
+/* section home */
+#home
+{
+
+  background-image: url("images/pinkgreen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+  max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  #home {
+    background-image: url('images/pinkgreen.jpg');
+  }
+
+  #whenandwherepara{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+#partypara2{
+  padding-top: 25px;
+}
+}
+
+.navbar-brand
+{
+  font-family: 'Kaushan Script', cursive;
+  font-size:70px;
+}
+.navbar-nav
+{
+padding-left: 75px;
+}
+.nav-item
+{
+  padding-left: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+}
+.nav-item,.navbar-brand:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.navbar-toggler {
+  border: none;
+  width: 1em;
+  float:none;
+}
+.homepagetext
+{
+  font-family: 'Kaushan Script', cursive;
+  color:white;
+  margin-bottom: 25px;
+  padding-top: 300px;
+  padding-bottom: 150px;
+  line-height: 4rem;
+}
+.heart
+{
+  width: 5%;
+  height:auto;
+}
+.couplename
+{
+color: white;
+}
+h1
+{
+  font-size: 70px;
+  font-family: 'Kaushan Script', cursive;
+  color: #ff4c68;
+}
+h4 {
+  display: flex;
+  flex-direction:row-reverse;
+}
+h4:before, h4:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 4px solid;
+  text-decoration: line-through;
+  margin: auto 0.5em;
+}
+h4:before {
+  margin-right:25%;
+}
+h4:after {
+  margin-left:25%;
+}
+h2
+{
+  color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+/* section groom & bride */
+#groombride
+{
+  background-color:white;
+  padding:5% 10%;
+}
+.fa-heart
+{
+  color:  #ff4c68;
+}
+.secpagetext
+{
+  padding: 3%;
+  line-height: 2;
+    color:#393E46;
+}
+.secpara
+{
+  padding: 2%;
+}
+.groomtext
+{
+  background-color:#FFF5FD;
+  padding: 25px;
+  color:#393E46;
+}
+.bridetext
+{
+background-color: #FFF5FD;
+padding: 25px;
+color:#393E46;
+}
+.gbimage
+{
+  width: auto;
+  height: 300px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.bridegroomnamesmall
+{
+  font-family: 'Kaushan Script', cursive;
+  color: #ff4c68;
+
+}
+.bridegroom
+{
+  color:  #ff4c68;
+  border: 1px solid;
+  }
+.fa-twitter-square
+{
+  padding: 10px;
+  color:  #ff4c68;
+}
+.fa-facebook-square
+{
+    padding: 10px;
+    color:  #ff4c68;
+}
+.fa-instagram-square
+{
+    padding: 10px;
+    color:  #ff4c68;
+}
+.fa-envelope
+{
+    padding: 10px;
+    color:  #ff4c68;
+}
+.icon:hover
+{
+  color:#29BB89;
+}
+.weddingdate
+{
+background-image: url("images/wedding-social.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  }
+.weddinddateandtime
+{
+  padding: 5% 10%;
+  color: white;
+
+}
+.days
+{
+  color: white;
+}
+
+/* section Love story*/
+#lovestory
+{
+  background-color:white;
+  padding:5% 7%;
+}
+.lovestory
+{
+  margin-top: 50px;
+}
+.couple
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+.lovestoryheading
+{
+  color: #ff4c68;
+  font-family: 'Kaushan Script', cursive;
+  margin-top: 25px;
+}
+.lovestorytext
+{
+  padding: 2%;
+  text-align:left;
+  background-color:#FFF5FD;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+/* greetings section */
+
+#greetings{
+  background-image: url("images/cover_bg_3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 5% 13% 13% 13%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  line-height: 2;
+  padding: 5%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-family: 'Kaushan Script', cursive;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #FFF5FD;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color:#FFF5FD;
+  transform: rotateY(180deg);
+}
+.greetingheading
+{
+  padding-bottom:10%;
+  color: #ff4c68;
+}
+.cardheading
+{
+  padding-top: 7%;
+  padding-bottom: 5%;
+    color:  #ff4c68;
+}
+.cardtext
+{
+  color: grey;
+}
+
+/* section people  */
+#people
+{
+  background-color:white;
+  padding: 9%;
+  padding-bottom:3%;
+}
+
+.groommen
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 50%;
+  padding-bottom: 5%;
+}
+.boys
+{
+margin-top:75px;
+margin-bottom:75px;
+}
+.girls
+{
+margin-top:75px;
+margin-bottom:75px;
+}
+.friends
+{
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* section when & where */
+#whenandwhere
+{
+padding: 0 7% 5% 7%;
+}
+
+.ceremonyimage
+{
+  width: 90%;
+  height: 50%;
+}
+
+.whenandwheretext
+{
+    font-family: 'Kaushan Script', cursive;
+    margin : 4% 4% 0% 4%;
+}
+
+.ceremonyheading
+{
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 25px;
+  color:  #ff4c68;
+}
+.partyheading
+{
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 25px;
+  color:  #ff4c68;
+}
+
+.ceremonytext
+{
+  background-color:#FFF5FD;
+  padding: 7%;
+  margin-left: 25px;
+  margin-right: 25px;
+  line-height: 2;
+}
+
+/* invited section */
+.invitedpage
+{
+  background-image: url("images/cover_bg_1.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  padding: 10%;
+
+}
+
+.invitationtext
+{
+  padding-top: 25px;
+  font-family: 'Kaushan Script', cursive;
+  color:black;
+}
+.invitationform
+{
+  padding-top: 10%;
+}
+.invitationbutton
+{
+  margin: 15px;
+}
+/* section gallery */
+#gallery
+{
+padding: 2%;
+}
+.gallerytext
+{
+  padding-top: 15px;
+}
+.ourselfies
+{
+  padding-top:5%;
+  padding-bottom: 5%;
+  font-family: 'Kaushan Script', cursive;
+}
+.galleryrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallerycolumn{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallerycolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallerycolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallerycolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* footer section */
+#blog
+{
+  padding:10%;
+}
+
+.ourblogs
+{
+padding-bottom: 7%;
+  font-family: 'Kaushan Script', cursive;
+}
+.blogimage
+{
+  width:100%;
+  height:auto;
+}
+.blogheading
+{
+  font-family: 'Kaushan Script', cursive;
+  color:  #ff4c68;
+  padding-top: 10px;
+}
+.blogheadtext
+{
+  padding-top: 15px;
+}
+.blogtext
+{
+line-height:2;
+text-align:left;
+}
+.blogbutton
+{
+  margin-bottom: 25px;
+}
+.footer
+{
+  padding-bottom: 8%;
+}
+.fa-2x:hover
+{
+color:#29BB89;
+}
